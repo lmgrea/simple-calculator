@@ -1,6 +1,17 @@
 #include <stdio.h>
 #include <math.h>
 
+double add(double a, double b);
+
 int main () {
-    
+    double a, b, result;
+
+        printf("Enter two numbers: ");
+        scanf("%lf %lf", &a, &b);
+        result = add(a, b);
+        printf("Result: %.2lf\n", result);
+}
+
+double add(double a, double b) {
+    return a + b;
 }
