@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <math.h>
 
+//Function Prototypes for operations
 double add(double a, double b);
 double subtract(double a, double b);
 double multiply(double a, double b);
 double divide(double a, double b);
 
+//Main function where the user inputs the type of operation and the values
 int main () {
 double a, b, result;
     int choice, n;
@@ -44,6 +46,7 @@ double a, b, result;
     }
 }
 
+//Function definitions for prototypes
 double add(double a, double b) {
     return a + b;
 }
