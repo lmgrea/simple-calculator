@@ -4,6 +4,7 @@
 double add(double a, double b);
 double subtract(double a, double b);
 double multiply(double a, double b);
+double divide(double a, double b);
 
 int main () {
     double a, b, result;
@@ -16,6 +17,8 @@ int main () {
         printf("Subtract: %.2lf\n", subtract(a,b));
 
         printf("Multiply: %.2lf\n", multiply(a,b));
+
+        printf("Divide: %.2lf\n", divide(a,b));
 }
 
 double add(double a, double b) {
@@ -28,4 +31,13 @@ double subtract(double a, double b) {
 
 double multiply(double a, double b) {
     return a * b;
+}
+
+double divide(double a, double b) {
+    if (b != 0) {
+        return a / b;
+    } else {
+        printf("Error: Division by zero.\n");
+        return 0;
+    }
 }
