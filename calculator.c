@@ -39,6 +39,8 @@ double a, b, result;
             result = divide(a, b);
             printf("Result: %.2lf\n", result);
             break;
+        default:
+            printf("Invalid choice!\n");
     }
 }
 
